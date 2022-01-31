@@ -39,8 +39,7 @@ class SignupForm extends StatelessWidget {
                   controller: _panNumberTextController,  
                   decoration: buildInputDecoration(hintText: 'PAN Number', individualIcon: Icon(Icons.credit_card)) ,    
                 ),
-              ),
-              
+              ), 
             ],
           ), 
           );

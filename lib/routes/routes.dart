@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:vivriti_invester_ui/screens/distrubuter_rm_screen.dart';
+import 'package:vivriti_invester_ui/screens/phone_otp_page.dart';
 import 'package:vivriti_invester_ui/screens/signup.dart';
 import '/screens/home.dart';
 import '/screens/login.dart';
@@ -15,6 +17,10 @@ class Routes{
         return MaterialPageRoute(builder: (_)=> const HomeScreen());
         case '/sign':
         return MaterialPageRoute(builder: (_)=> const SignupScreen());
+        case '/phnotp':
+        return MaterialPageRoute(builder: (_)=> const PhoneOtpScreen());
+        case '/disrm':
+        return MaterialPageRoute(builder: (_)=> const DistrubutorRMScreen());
       default:
         return errorRoute();
     }
@@ -24,3 +30,4 @@ class Routes{
     return MaterialPageRoute(builder: (_)=> const HomeScreen());
   }
 }
+
